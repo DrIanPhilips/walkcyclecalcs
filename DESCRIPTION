@@ -1,11 +1,15 @@
 Package: walkcyclecalcs
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Walking and cycling calculations
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Authors@R:c(person("Ian","Philips",email="i.philips@leeds.ac.uk",role = "cre",comment = c(ORCID = "inhere")))
+Maintainer: Ian Philips <i.philips@leeds.ac.uk>
+Description: A paragraph of text which I will add to later
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.1
+Language: EN-GB
+Imports: 
+    ggplot2
