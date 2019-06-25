@@ -8,16 +8,20 @@
 #' @param data dataframe optional, default is NULL
 #' @param personID default = "personID" vector or character string of column name in data
 #' @param age default =  "age",vector or character string of column name in data
-#' @param sex = "sex"
-#' @param weight = "weight",
-#' @param BMI default = "BMI",
-#' @param PASS default = "PASScat",
+#' @param sex default = "sex" 0 is male 1 is female
+#' @param weight default = "weight", weight of bike and rider in kg
+#' @param BMI default = "BMI", Body Mass Index kg/m2
+#' @param PASS default = "PASScat", NASA - Physical Activity Survey
 #' @param clones default  = 10
 #' @param return_a_vector default = TRUE
 #' @export
 #' @return vector default or data frame of estimate of vo2max
 #' @details
-#' long form explanation of function
+#' The function makes estimates of VO2max based on the regression model by Wier et al.
+#' DOI:  10.1249/01.mss.0000193561.64152  given the input values.  This study
+#' aims to be applicable to the population as a whole rather than just a particular
+#' population segment.
+#' #'
 #' @examples
 #' \dontrun{
 #'personID <- c(1,2,3)

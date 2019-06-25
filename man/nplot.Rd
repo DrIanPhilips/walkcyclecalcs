@@ -17,7 +17,7 @@ This is a function which plots a histogram of
 the results of naismithwalkspeed using ggplot
 }
 \details{
-long form explanation of the function
+This is a simple plotting function for testing only
 }
 \examples{
 \dontrun{

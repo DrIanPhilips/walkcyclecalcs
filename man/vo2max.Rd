@@ -15,13 +15,13 @@ vo2max(data = NULL, personID = "personID", age = "age",
 
 \item{age}{default =  "age",vector or character string of column name in data}
 
-\item{sex}{= "sex"}
+\item{sex}{default = "sex" 0 is male 1 is female}
 
-\item{weight}{= "weight",}
+\item{weight}{default = "weight", weight of bike and rider in kg}
 
-\item{BMI}{default = "BMI",}
+\item{BMI}{default = "BMI", Body Mass Index kg/m2}
 
-\item{PASS}{default = "PASScat",}
+\item{PASS}{default = "PASScat", NASA - Physical Activity Survey}
 
 \item{clones}{default  = 10}
 
@@ -37,7 +37,11 @@ given the inputs of the person's age sex weight BMI and physical activity
 It returns measures of VO2max
 }
 \details{
-long form explanation of function
+The function makes estimates of VO2max based on the regression model by Wier et al.
+DOI:  10.1249/01.mss.0000193561.64152  given the input values.  This study
+aims to be applicable to the population as a whole rather than just a particular
+population segment.
+#'
 }
 \examples{
 \dontrun{

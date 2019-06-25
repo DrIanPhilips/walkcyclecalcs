@@ -11,7 +11,10 @@
 #' @export
 #' @return walking speed km/hr
 #' @details
-#' long form explanation of the function
+#' This function is an adaptation of Naismith's Rule
+#' (see Naismith, W., 1892. Untitled. Scottish Mountaineering Club Journal 2, 135.)
+#' Its basic form says walking speed can be estimated as 3 miles per hour 5(km/hr) plus 1 minute
+#' for every 30 feet (10m) of height gained.
 #' @examples
 #' \dontrun{
 #' naismithwalkspeed(40,4)
@@ -64,7 +67,7 @@ naismithwalkspeed <- function(vo2max,slope){
 #' @export
 #' @return a ggplot2 histogram
 #' @details
-#' long form explanation of the function
+#' This is a simple plotting function for testing only
 #' @examples
 #' \dontrun{
 #' nplot(c(2,2,4,6,6))
