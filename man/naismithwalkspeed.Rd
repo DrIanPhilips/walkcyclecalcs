@@ -7,7 +7,7 @@
 naismithwalkspeed(vo2max, slope)
 }
 \arguments{
-\item{vo2max}{vector, the Vo2max of each individual l/kg/min-1}
+\item{vo2max}{vector, the Vo2max of each individual (ml/kg/min-1)}
 
 \item{slope}{vector, slope of the route as a percentage}
 }

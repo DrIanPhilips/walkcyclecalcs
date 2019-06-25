@@ -6,7 +6,7 @@
 #' It returns the speed
 #'
 #'
-#' @param vo2max vector, the Vo2max of each individual l/kg/min-1
+#' @param vo2max vector, the Vo2max of each individual (ml/kg/min-1)
 #' @param slope vector, slope of the route as a percentage
 #' @export
 #' @return walking speed km/hr

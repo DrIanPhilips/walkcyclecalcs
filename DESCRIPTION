@@ -2,7 +2,7 @@ Package: walkcyclecalcs
 Type: Package
 Title: Walking and cycling calculations
 Version: 0.1.0
-Authors@R:c(person("Ian","Philips",email="i.philips@leeds.ac.uk",role = "cre",comment = c(ORCID = "0000-0003-1938-7842")))
+Authors@R: c(person("Ian","Philips",email="i.philips@leeds.ac.uk",role = "cre",comment = c(ORCID = "0000-0003-1938-7842")))
 Maintainer: Ian Philips <i.philips@leeds.ac.uk>
 Description: A paragraph of text which I will add to later
     Use four spaces when indenting paragraphs within the Description.
@@ -12,6 +12,9 @@ LazyData: true
 RoxygenNote: 6.1.1
 Language: EN-GB
 Imports: 
+    stats,
     ggplot2
 Suggests:
-    testthat
+    testthat,
+    knitr
+VignetteBuilder: knitr
