@@ -4,8 +4,13 @@ Title: Walking and cycling calculations
 Version: 0.1.0
 Authors@R: c(person("Ian","Philips",email="i.philips@leeds.ac.uk",role = "cre",comment = c(ORCID = "0000-0003-1938-7842")))
 Maintainer: Ian Philips <i.philips@leeds.ac.uk>
-Description: A paragraph of text which I will add to later
-    Use four spaces when indenting paragraphs within the Description.
+Description: The goal of walkcyclecalcs is to provide functions which can be used to 
+    estimate the physical capability of populations of individuals to make journeys 
+    by walking or cycling.  This is useful of you want to know things like who could 
+    get to work if there was a shock reduction in fuel availability for motor vehicles.  
+    It is also useful if you want to understand whether it's reasonable to assume 
+    everyone in a community has the physical capability to make use of new cycle 
+    infrastructure or could walk to the nearest bus-stop.  
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true

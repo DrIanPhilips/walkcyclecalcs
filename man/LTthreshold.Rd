@@ -17,13 +17,11 @@ LTthreshold(data = NULL, personID = "personID", weight = "weight",
 
 \item{BMI}{default = "BMI", Body Mass Index kg/m2}
 
-\item{PASS}{default = "PASScat", NASA - Physical Activity Survey}
+\item{vo2max}{default = "vo2unif", an estimate of VO2max (mL/kg/min)}
+
+\item{PASS}{default = "PASS", NASA - Physical Activity Survey}
 
 \item{return_a_vector}{default = TRUE}
-
-\item{Vo2max}{default = "vo2unif", an estimate of VO2max (mL/kg/min)}
-
-\item{clones}{default  = 10}
 }
 \value{
 Threshold percentage of Vo2max

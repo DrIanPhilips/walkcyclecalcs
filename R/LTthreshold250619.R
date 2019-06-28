@@ -9,9 +9,8 @@
 #' @param personID default = "personID" vector or character string of column name in data
 #' @param weight default = "weight", weight of bike and rider in kg
 #' @param BMI default = "BMI", Body Mass Index kg/m2
-#' @param Vo2max default = "vo2unif", an estimate of VO2max (mL/kg/min)
-#' @param PASS default = "PASScat", NASA - Physical Activity Survey
-#' @param clones default  = 10
+#' @param vo2max default = "vo2unif", an estimate of VO2max (mL/kg/min)
+#' @param PASS default = "PASS", NASA - Physical Activity Survey
 #' @param return_a_vector default = TRUE
 #' @export
 #' @return Threshold percentage of Vo2max
@@ -70,8 +69,8 @@ LTthreshold <- function(data = NULL,
   total$LTpercent [total$BMI >= 30] <- 48
   #estimate LT probabalistic exercise component
 
-  total$LTpercent [total$PASS == 6] <- round(total$LTpercent + (runif(1) * 10),1)
-  total$LTpercent [total$PASS >= 7] <- round(60 + (runif(1) * 15),1)
+  total$LTpercent [total$PASS == 6] <- round(total$LTpercent + (stats::runif(1) * 10),1)
+  total$LTpercent [total$PASS >= 7] <- round(60 + (stats::runif(1) * 15),1)
 
   if (return_a_vector == TRUE) {
     return(as.vector(total$LTpercent))

@@ -79,8 +79,8 @@ vo2max <- function(data = NULL,personID = "personID",age = "age",
   #make multiple clones of individuals with different Vo2max values
   for (i in 1:clones){
     dftemp <- total
-    dftemp$vo2max_unif <- dftemp$vo2_no_error + (runif(length(dftemp[[1]]),-1,1)*4.9)
-    dftemp$vo2max_norm <- dftemp$vo2_no_error + rnorm(length(dftemp[[1]]),0,4.9)
+    dftemp$vo2max_unif <- dftemp$vo2_no_error + (stats::runif(length(dftemp[[1]]),-1,1)*4.9)
+    dftemp$vo2max_norm <- dftemp$vo2_no_error + stats::rnorm(length(dftemp[[1]]),0,4.9)
     #each iteration add a copy of each row df_no_error
     if (i != 1){
       #dftemp has more columns than df cre
